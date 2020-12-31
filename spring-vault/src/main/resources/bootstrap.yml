@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: test
+  profiles:
+    active: dev
+  cloud:
+    vault:
+      authentication: TOKEN
+      token: s.PWPEzzHADu6CQNVMpyc7ir3z
+      scheme: http
+      host: localhost
+      port: 8200
+      kv:
+        enabled: true
+        backend: firstvault

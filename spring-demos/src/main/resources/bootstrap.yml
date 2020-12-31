@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: hello
+  cloud:
+    vault:
+      authentication: TOKEN
+      token: ${VAULT_TOKEN}
+      scheme: http
+      host: localhost
+      port: 8200
+      kv:
+        enabled: true
